@@ -127,6 +127,13 @@ function getPasswordOptions() {
 
 // Function for getting a random element from an array
 function getRandom(arr) {
+  for (var i = 0; i < charNum; i++) {
+      // console.log("----------");
+      // console.log(allCharacters[i]);
+      newPassword = newPassword + allCharacters[Math.floor(Math.random() * allCharacters.length)];
+      console.log("-----------");
+      console.log(newPassword);
+    }
 }
 
 // Function to generate password with user input
