@@ -98,7 +98,7 @@ function getPasswordOptions() {
    allCharacters = [];
     charNum = prompt("How many characters would you like to include?");
     if (charNum < 10 || charNum > 64) {
-      alert("Not a valid amount")
+      alert("The number of characters should be between 8 and 128")
       return
     }
     if (confirm("Click OK to include upper case characters")) { 
@@ -131,8 +131,8 @@ function getRandom(arr) {
       // console.log("----------");
       // console.log(allCharacters[i]);
       newPassword = newPassword + allCharacters[Math.floor(Math.random() * allCharacters.length)];
-      console.log("-----------");
-      console.log(newPassword);
+      // console.log("-----------");
+      // console.log(newPassword);
     }
 }
 
