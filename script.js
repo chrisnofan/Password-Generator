@@ -90,14 +90,14 @@ var upperCasedCharacters = [
 
   var allCharacters;
   var newPassword = "";
-  var charNum = 10;
+  var charNum = 0;
 
 // Function to prompt user for password options
 function getPasswordOptions() {
   
    allCharacters = [];
     charNum = prompt("How many characters would you like to include?");
-    if (charNum < 10 || charNum > 64) {
+    if (charNum < 8 || charNum > 128) {
       alert("The number of characters should be between 8 and 128. Try again!")
       return
     }
