@@ -89,13 +89,13 @@ var upperCasedCharacters = [
 ];
 
   var allCharacters;
-  var newPassword = ""
-  var charNum = 10
+  var newPassword = "";
+  var charNum = 10;
 
 // Function to prompt user for password options
 function getPasswordOptions() {
   
-   allCharacters = []
+   allCharacters = [];
     charNum = prompt("How many characters would you like to include?");
     if (charNum < 10 || charNum > 64) {
       alert("Not a valid amount")
@@ -138,8 +138,11 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
-
+      getPasswordOptions();
+    return newPassword;
+  
 }
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
