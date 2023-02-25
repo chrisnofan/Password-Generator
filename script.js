@@ -98,7 +98,7 @@ function getPasswordOptions() {
    allCharacters = [];
     charNum = prompt("How many characters would you like to include?");
     if (charNum < 10 || charNum > 64) {
-      alert("The number of characters should be between 8 and 128")
+      alert("The number of characters should be between 8 and 128. Try again!")
       return
     }
     if (confirm("Click OK to include upper case characters")) { 
